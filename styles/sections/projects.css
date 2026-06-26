@@ -1,0 +1,12 @@
+.section--projects .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.card--project .tag {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-size: 0.85rem;
+  color: var(--muted);
+}

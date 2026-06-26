@@ -1,0 +1,35 @@
+:root {
+  /* Base */
+  --bg: #0b0f17;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.08);
+
+  /* Colors */
+  --primary: #6ea8fe;
+  --primary-glow: rgba(110, 168, 254, 0.25);
+
+  --text: #e6e9ef;
+  --muted: #a1a8b3;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.3);
+}

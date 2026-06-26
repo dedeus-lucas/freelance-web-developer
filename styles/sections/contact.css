@@ -1,0 +1,20 @@
+.section--contact form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 500px;
+}
+
+.section--contact input,
+.section--contact textarea {
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.section--contact input:focus,
+.section--contact textarea:focus {
+  outline: 1px solid var(--primary);
+}

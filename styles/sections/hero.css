@@ -1,0 +1,21 @@
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.hero__title {
+  max-width: 800px;
+  margin-bottom: var(--space-5);
+}
+
+.hero__cta {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
