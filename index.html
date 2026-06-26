@@ -180,14 +180,44 @@
         </p>
 
         <form class="form" data-form="contact">
-          <input type="text" placeholder="Nome" data-input="name" />
-          <input type="email" placeholder="Email" data-input="email" />
-          <textarea
-            placeholder="Descreva seu projeto"
-            data-input="message"
-          ></textarea>
+          <div class="form__group">
+            <label for="name">Nome</label>
+            <input
+              id="name"
+              type="text"
+              data-input="name"
+              autocomplete="name"
+              required
+            />
+          </div>
 
-          <button type="submit" class="btn btn--primary" data-i18n="cta.send">
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              data-input="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="message">Descreva seu projeto</label>
+            <textarea
+              id="message"
+              data-input="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn--primary"
+            data-i18n="cta.send"
+            data-action="submit-contact"
+          >
             Enviar
           </button>
         </form>
