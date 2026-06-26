@@ -1,20 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Freelance Web Developer | High-Performance Websites</title>
+    <title>Freelance Web Developer | Websites de Alta Performance</title>
+
     <meta
       name="description"
-      content="I help businesses grow through fast, modern and conversion-focused websites."
+      content="Desenvolvimento de sites rápidos, modernos e focados em conversão para empresas."
     />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Freelance Web Developer" />
     <meta
       property="og:description"
-      content="High-performance websites for businesses."
+      content="Websites de alta performance que geram resultado para negócios."
     />
 
     <link rel="stylesheet" href="styles/main.css" />
@@ -22,70 +23,106 @@
 
   <body>
     <!-- =========================
-        HERO SECTION
+        HEADER / NAV
   ========================== -->
-    <header class="hero">
-      <nav class="navbar">
-        <div class="logo">Dev.</div>
+    <header class="header" data-section="header">
+      <nav class="nav nav--main" data-component="navbar">
+        <div class="nav__logo" data-i18n="nav.logo">Dev.</div>
 
-        <div class="nav-links">
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <ul class="nav__links">
+          <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+        </ul>
       </nav>
 
-      <div class="hero-content">
-        <h1>
-          I help businesses grow through fast, modern and conversion-focused
-          websites.
-        </h1>
+      <!-- =========================
+          HERO
+    ========================== -->
+      <section class="hero" data-section="hero">
+        <div class="hero__content">
+          <h1 class="hero__title" data-i18n="hero.title">
+            Eu ajudo empresas a crescer com sites rápidos, modernos e focados em
+            conversão.
+          </h1>
 
-        <p>
-          Full Stack Web Developer specialized in high-performance digital
-          experiences.
-        </p>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">
+            Desenvolvedor Full Stack especializado em experiências web de alta
+            performance.
+          </p>
 
-        <div class="cta">
-          <a href="#projects" class="btn primary">View Work</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+          <div class="hero__cta">
+            <a
+              href="#projects"
+              class="btn btn--primary"
+              data-action="view-projects"
+              data-i18n="cta.projects"
+            >
+              Ver Projetos
+            </a>
+
+            <a
+              href="#contact"
+              class="btn btn--secondary"
+              data-action="contact"
+              data-i18n="cta.contact"
+            >
+              Falar Comigo
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
     </header>
 
     <!-- =========================
         ABOUT
   ========================== -->
-    <section id="about">
-      <h2>About</h2>
+    <section id="about" class="section section--about" data-section="about">
+      <div class="container">
+        <h2 class="section__title" data-i18n="about.title">Sobre</h2>
 
-      <p>
-        I build web experiences focused on performance, clarity and conversion.
-        My goal is to help businesses turn their online presence into a growth
-        channel.
-      </p>
+        <p class="section__text" data-i18n="about.text">
+          Eu desenvolvo interfaces web focadas em performance, clareza e
+          conversão. Meu objetivo é transformar presença digital em geração real
+          de negócios.
+        </p>
+      </div>
     </section>
 
     <!-- =========================
         SERVICES
   ========================== -->
-    <section id="services">
-      <h2>Services</h2>
+    <section
+      id="services"
+      class="section section--services"
+      data-section="services"
+    >
+      <div class="container">
+        <h2 class="section__title" data-i18n="services.title">Serviços</h2>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Landing Pages</h3>
-          <p>High-conversion pages focused on sales and leads.</p>
-        </div>
+        <div class="grid grid--3">
+          <article class="card card--service" data-service="landing-page">
+            <h3 data-i18n="services.landing.title">Landing Pages</h3>
+            <p data-i18n="services.landing.text">
+              Páginas de alta conversão focadas em vendas e geração de leads.
+            </p>
+          </article>
 
-        <div class="card">
-          <h3>Institutional Websites</h3>
-          <p>Professional websites for businesses and brands.</p>
-        </div>
+          <article class="card card--service" data-service="institutional">
+            <h3 data-i18n="services.institutional.title">
+              Sites Institucionais
+            </h3>
+            <p data-i18n="services.institutional.text">
+              Websites profissionais para empresas e marcas.
+            </p>
+          </article>
 
-        <div class="card">
-          <h3>Optimization</h3>
-          <p>Performance, SEO and redesign improvements.</p>
+          <article class="card card--service" data-service="optimization">
+            <h3 data-i18n="services.optimization.title">Otimização</h3>
+            <p data-i18n="services.optimization.text">
+              Performance, SEO e melhorias de conversão.
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -93,26 +130,34 @@
     <!-- =========================
         PROJECTS
   ========================== -->
-    <section id="projects">
-      <h2>Selected Projects</h2>
+    <section
+      id="projects"
+      class="section section--projects"
+      data-section="projects"
+    >
+      <div class="container">
+        <h2 class="section__title" data-i18n="projects.title">
+          Projetos Selecionados
+        </h2>
 
-      <div class="grid">
-        <div class="card project">
-          <h3>Healthcare MVP</h3>
-          <p>Web platform for healthcare service validation.</p>
-          <span>Stack: HTML, CSS, JS</span>
-        </div>
+        <div class="grid grid--3">
+          <article class="card card--project" data-project="healthcare">
+            <h3>Healthcare MVP</h3>
+            <p>Plataforma web para validação de serviços de saúde.</p>
+            <span class="tag">HTML • CSS • JS</span>
+          </article>
 
-        <div class="card project">
-          <h3>Financial Platform</h3>
-          <p>Concept system for financial tracking and analytics.</p>
-          <span>Stack: Java, Spring Boot, Web</span>
-        </div>
+          <article class="card card--project" data-project="finance">
+            <h3>Financial Platform</h3>
+            <p>Sistema conceitual para análise financeira.</p>
+            <span class="tag">Java • Spring Boot</span>
+          </article>
 
-        <div class="card project">
-          <h3>Portfolio System</h3>
-          <p>This very project showcasing engineering and design.</p>
-          <span>Stack: Vanilla Web Stack</span>
+          <article class="card card--project" data-project="portfolio">
+            <h3>Portfolio System</h3>
+            <p>Este próprio projeto como demonstração de engenharia.</p>
+            <span class="tag">Vanilla Stack</span>
+          </article>
         </div>
       </div>
     </section>
@@ -120,31 +165,46 @@
     <!-- =========================
         CONTACT
   ========================== -->
-    <section id="contact">
-      <h2>Let's work together</h2>
+    <section
+      id="contact"
+      class="section section--contact"
+      data-section="contact"
+    >
+      <div class="container">
+        <h2 class="section__title" data-i18n="contact.title">
+          Vamos trabalhar juntos
+        </h2>
 
-      <p>Have a project in mind? Let’s build something high-performance.</p>
+        <p class="section__text" data-i18n="contact.text">
+          Tem um projeto em mente? Vamos construir algo de alta performance.
+        </p>
 
-      <form>
-        <input type="text" placeholder="Your name" />
-        <input type="email" placeholder="Your email" />
-        <textarea placeholder="Project description"></textarea>
+        <form class="form" data-form="contact">
+          <input type="text" placeholder="Nome" data-input="name" />
+          <input type="email" placeholder="Email" data-input="email" />
+          <textarea
+            placeholder="Descreva seu projeto"
+            data-input="message"
+          ></textarea>
 
-        <button type="submit">Send Message</button>
-      </form>
+          <button type="submit" class="btn btn--primary" data-i18n="cta.send">
+            Enviar
+          </button>
+        </form>
 
-      <div class="links">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Email</a>
-        <a href="#">WhatsApp</a>
+        <div class="contact-links">
+          <a href="#" data-action="github">GitHub</a>
+          <a href="#" data-action="linkedin">LinkedIn</a>
+          <a href="#" data-action="email">Email</a>
+          <a href="#" data-action="whatsapp">WhatsApp</a>
+        </div>
       </div>
     </section>
 
     <!-- =========================
         FOOTER
   ========================== -->
-    <footer>
+    <footer class="footer" data-section="footer">
       <p>© 2026 Freelance Web Developer. All rights reserved.</p>
     </footer>
 
